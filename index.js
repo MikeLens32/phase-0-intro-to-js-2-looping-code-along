@@ -5,7 +5,6 @@
 //      console.log(`Wrapped ${gifts[i]} and added a bow!`);
 //     debugger;
 //   }
-
 //   return gifts;
 // }
 
@@ -13,31 +12,31 @@
 
 // const cards = ["Mom", "Dad", "Brother"];
 
-// function writeCards(cards) {
-//     for (let i = 0; i <cards.length; i++) {
-//         console.log(`Thank you ${cards[i]} for being the best!`);
-//     debugger;
-//     }
-//     return cards;
-// }
-// writeCards(cards);
+function writeCards(cards) {
+    const array = []
+    for (let i = 0; i <cards.length; i++) {
+        array.push(`Thank you, ${cards[i]}, for the wonderful surprise gift!`);
+    }
+    return array;
+}
 
 
+
+function countDown(num) {
+    let loop = num
+    while (loop >= 0) {
+        console.log(loop--);
+    }
+}
+
+
+// countDown();
 
 // function countDown() {
-//     while (countDown > -1) {
-//         console.log(countDown--);
-//         debugger;
+//     let number = 10;
+//     while (number >= 0) {
+//         console.log(number--);
 //     }
 //     return countDown;
 // }
-// countDown();
-
-function countDown() {
-    let number = 10;
-    while (number >= 0) {
-        console.log(number--);
-    }
-    return countDown;
-}
-countDown()
+// countDown()
